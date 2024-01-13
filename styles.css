@@ -1,0 +1,253 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color:#4267d7;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.navitemeleft
+{
+    margin-left: 15%;
+}
+.navitem{
+    width: 900px; /* Adjust the width as needed */
+    margin: 0 auto; /* This centers the div horizontally */
+    color: #7d0707;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  background-color: #0088cc;
+  height: 300px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.alternative-font, a, .color-primary
+{
+    color:#000000;
+}
+
+p{
+    font-family:Roboto;
+    font-weight:normal;
+    color:#0a0a0a;
+}
+
+#footer,#footer p
+{
+    font-family:Roboto;
+    line-height:15px;
+    font-weight:400;
+    color:#ffffff;
+    font-size:13px;
+}
+
+#footer h1,#footer h2,#footer h3,#footer h4,#footer h5,#footer h6,#footer .widget-title,#footer .widget-title a,.footer-top .widget-title
+{
+    font-family:Roboto;
+    font-weight:normal;
+}
+
+.header-wrapper
+{
+    background-color:#ffffff;
+}
+
+#header .header-main
+{
+    background-color:#ffffff;
+}
+
+#header, #header .header-main .header-contact .nav-top > li > a, #header .top-links > li.menu-item:before
+{
+    color:#0a0a0a;
+}
+
+#header .header-top, .header-top .top-links>li.menu-item:after
+{
+    color:#0a0a0a;
+}
+
+.page-top
+{
+    background-color:#2cc1d2;
+}
+
+#footer
+{
+    background-color:#0e0e0e;
+}
+
+#footer .footer-bottom
+{
+    background-color:#060606;
+}
+
+#footer .footer-bottom, #footer .footer-bottom p, #footer .footer-bottom .widget > div > ul li, #footer .footer-bottom .widget > ul li
+{
+    color:#555555;
+}
+
+#mini-cart .cart-subtotal, #mini-cart .minicart-icon
+{
+    color:#0088cc;
+}
+
+#mini-cart .cart-items, #mini-cart .cart-items-text
+{
+    color:#ffffff;
+}
+
+#mini-cart
+{
+    background:#ffffff;
+}
