@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tickerBar.css">
     <script src="https://kit.fontawesome.com/feca569b47.js" crossorigin="anonymous"></script>
     <script>
         let slideIndex = 1;
@@ -36,9 +37,12 @@
         dots[slideIndex-1].className += " active";
         }
     </script>
+
+    
 </head>
 <body>
     
+    <div class="body_main">
     <!-- header wrapper -->
     <div class="header-wrapper header-reveal">
         <header id="header" class="header-separate header-corporate header-17 sticky-menu-header">
@@ -83,41 +87,255 @@
     </nav>
 
     
-    <article>
-        <div class="slideshow-container">
+    <nav class="product-list-navbar">
+        <div class="dropdown-list">
+            <button class="dropbtn1" ><b>INSTRUMENTS</b>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="product-list-dropdown-content">
+                <a href="#">Temperature Controllers</a>
+                <a href="#">PID Temperature Controllers</a>
+                <a href="#">Temperature Transmitters</a>
+                <a href="#">Signal Isolators</a>
+                <a href="#">Clean room Indicators</a>
+                <a href="#">RH, T, DP Transmitters</a>
+                <a href="#">Scanners</a>
+                <a href="#">GPS Master-Slave Clocks</a>
+                <a href="#">Door Interlock System</a>
+                <a href="#">Flameproof Instruments</a>
+            </div>
+         </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="alarma.jpg" width="200" style="margin-left: 41.5%; margin-top: 50px;">
-              <div class="text">Caption Text</div>
+
+         <div class="dropdown-list">
+            <button class="dropbtn1" ><b>SENSORS</b>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="product-list-dropdown-content">
+                <a href="#">Temperature Sensors</a>
+                <a href="#">Temperature Sensors ThermoCouples</a>
+                <a href="#">ThermoWells</a>
+                <a href="#">Level Sensors and Transmitters</a>
+                <a href="#">Differential Pressure Sensors and Transmitters</a>
+                <a href="#">Humidity Sensors and Transmitters</a>
+                <a href="#">Scanners</a>
             </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="Electrical-Meters-Panel.jpg " width="200" style="margin-left: 41.5%; margin-top: 50px;">
-              <div class="text">Caption Two</div>
+         </div>
+         <div class="dropdown-list">
+            <button class="dropbtn1" >GAUGES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="product-list-dropdown-content">
+                <a href="#">Dial Thermometers</a>
+                <a href="#">Pressure Gauges</a>
+                <a href="#">Pressure Gauge Accessories</a>
+                <a href="#">Pressure Transmitters</a>
+                <a href="#">Pressure Switches </a>
+                <a href="#">Level  Gauges</a>
+                <a href="#">Scanners</a>
+                <a href="#">GPS Master-Slave Clocks</a>
+                <a href="#">Door Interlock System</a>
+                <a href="#">Temperature Transmitters</a>
             </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="Energy-Saving-Products.jpg" width="200" style="margin-left: 41.5%; margin-top: 50px;">
-              <div class="text">Caption Three</div>
+         </div>
+         <div class="dropdown-list">
+            <button class="dropbtn1" >AUTOMATION
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="product-list-dropdown-content">
+                <a href="#">Automation Projects</a>
+                <a href="#">Clean Room Indicators</a>
+                <a href="#">Control Panels</a>
+                <a href="#">rSCADA</a>
+                <a href="#">Analog Input Modules </a>
+                <a href="#">Thyristor Power regulators</a>
+                <a href="#">Converters and Communication Products</a>
+                <a href="#">Parking Ventilation Controller</a>
+                <a href="#">Air Quality Products</a>
             </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-    </article>
+         </div>
+        </nav>
+
+        <br>
+        <br>
+
+
+
+        <section>
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                    <input type="radio" name="slides" id="slide-2">
+                    <input type="radio" name="slides" id="slide-3">
+                    <input type="radio" name="slides" id="slide-4">
+                    <input type="radio" name="slides" id="slide-5">
+                    <input type="radio" name="slides" id="slide-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="assets/images/img1.png" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Tim Marshall</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="assets/images/img2.png" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Christian Joudrey</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="assets/images/img3.png" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Steve Carter</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="assets/images/img1.png" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="assets/images/img2.png" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Rosan Harmens</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="assets/images/img3.png" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Annie Spratt</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>    
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="slide-1"><img src="assets/images/img1.png" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-2"><img src="assets/images/img2.png" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-3"><img src="assets/images/img3.png" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-4"><img src="assets/images/img1.png" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5"><img src="assets/images/img2.png" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-6"><img src="assets/images/img3.png" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     
+    <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: large; color: maroon;">Our trusted Partners</h2>
+    <div class="marquee container-marquee ">
+        <span>
+            <img src="assets/images/meanwell.png" class="border">
+            <img src="assets/images/envada.png" class="border">
+            <img src="assets/images/senstherm.png" class="border">
+            <img src="assets/images/carlo-logo.png" class="border">
+            <img src="assets/images/autonics-logo1.png" class="border">
+            <img src="assets/images/smartec-logo.png" class="border">
+            <img src="assets/images/novus-logo.png" class="border">
+            <img src="assets/images/sipin.png" class="border">
+            <img src="assets/images/meanwell.png" class="border">
+            <img src="assets/images/envada.png" class="border">
+            <img src="assets/images/senstherm.png" class="border">
+            <img src="assets/images/carlo-logo.png" class="border">
+            <img src="assets/images/autonics-logo1.png" class="border">
+            <img src="assets/images/smartec-logo.png" class="border">
+            <img src="assets/images/novus-logo.png" class="border">
+        </span>
+    </div>
+    
+    <br>
+    <br>
+    <script type="text/javascript">
+        marqueeInit({
+            uniqueid: 'mycrawler2',
+            style: {
+                'padding': '5px',
+                    'width': '1000px',
+                'height': '70px'
+            },
+            inc: 5, //speed - pixel increment for each iteration of this marquee's movement
+            mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+            moveatleast: 1,
+            neutral: 80,
+            savedirection: true,
+            random: false
+        });
+    </script> 
+
+    <br>
+    
+    <br>
+        <div class="intro_about">
+            <section class="intro">
+                
+                <h2 style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif">About us Excellent Instruments</h2>
+                
+                <div class="percent-two-third"><p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex corporis iure doloribus dignissimos saepe. Nesciunt at eum nisi 
+                    quae consequatur ipsa aut vitae asperiores aperiam tempore sint magnam soluta, nobis adipisci dignissimos! Accusamus neque 
+                    adipisci qui perspiciatis enim obcaecati reprehenderit animi, voluptatibus dolor ea deserunt maxime molestias doloribus odio 
+                    corporis explicabo dolore accusantium labore, eligendi exercitationem aliquam ex! Voluptatum, impedit? Illo voluptatem veritatis 
+                    magnam corrupti voluptate nihil perspiciatis, explicabo numquam tenetur, molestiae nesciunt rerum iure inventore eligendi reprehenderit 
+                    at? Beatae, odio id veritatis architecto exercitationem hic maxime maiores ad unde cum dolorum eligendi cumque facere consectetur eum 
+                    consequuntur modi natus qui dolor placeat deleniti neque atque fuga quisquam. Perferendis, nobis, rem cupiditate labore ea illum eveniet 
+                    eos sequi voluptatibus, magnam consectetur nemo ex nostrum! Reprehenderit, consequatur. Error quas numquam sint similique id, ipsam 
+                    laborum culpa accusamus repudiandae unde facilis fugit commodi doloremque ipsum facere! Doloribus ex delectus voluptatem commodi 
+                    eligendi consequatur sit accusamus veritatis est aut omnis consequuntur ea totam, temporibus nulla unde repellat recusandae 
+                    repellendus doloremque nisi, voluptas similique? Excepturi dolore cum dolorum velit inventore. Molestias autem dolor, assumenda, 
+                    tempore, aperiam perspiciatis natus reprehenderit corporis iure possimus explicabo libero nihil temporibus laudantium necessitatibus 
+                    quas mollitia? Totam expedita 
+                    libero rerum?</p>
+                
+                </div>
+                
+                
+                <!-- <div class="percent-one-third column-last "><iframe width="100%" height="150" src="https://www.youtube.com/embed/RcKZq8VHUCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                
+                </div>
+            </section>
+        </div>
+
+
+    </div>
 </body>
 </html>
