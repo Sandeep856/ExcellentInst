@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel with Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .carousel-item:hover .carousel-info {
+            opacity: 1;
+        }
+    </style>
+
+<style>
+    div.slide-left {
+      width:100%;
+      overflow:hidden;
+    }
+    div.slide-left p {
+      animation: slide-left 3s;
+    }
+    div.slide-right p {
+      animation: slide-left 3s;
+    }
+    div.slide-right
+    {
+        width:100%;
+        overflow:hidden;
+    }
+    @keyframes slide-right {
+      from {
+        margin-bottom: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-bottom: 0%;
+        width: 100%;
+      }
+    }
+    @keyframes slide-left {
+      from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="slide-left">
+        <p>Never fight an inanimate object.</p>
+    </div>
+
+    <div class="slide-right">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
