@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom on Hover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Adjust the container size as needed */
+    height: 200px; /* Adjust the container size as needed */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.2); /* Adjust the scale factor for zoom level */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.2); /* Adjust the scale factor for zoom level */
+}
+</style>
+<body>
+    <div class="image-container">
+        <img src="../../assets/images/alarma.jpg" alt="Zoomable Image">
+    </div>
+</body>
+</html>
