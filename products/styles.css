@@ -319,7 +319,6 @@ body
     column-gap: 1px;
     row-gap: 50px;
     grid-auto-rows: minmax(100px, auto);
-  
 }
 
 .product-footer
