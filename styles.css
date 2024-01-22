@@ -611,7 +611,7 @@ body
 {
     border-radius: 2px;
     color:black;
-    margin-left: 80px;
+    margin-left: 5%;
     background-color: white;
 }
 /* Fading animation */
@@ -894,4 +894,16 @@ p{
       background: #F4F4F4;
       padding: 50px 0;
   }
+
+
+  .product-window-home
+{
+    margin-left: 5%;
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1px;
+    row-gap:10px;
+    grid-auto-rows: minmax(100px, auto);
+}
 
