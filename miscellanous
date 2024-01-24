@@ -1,0 +1,27 @@
+ <div class="marquee container-marquee ">
+          <span style="margin: auto ;">
+              <img src="assets/images/honeywell.png"  style="border:1px solid red;align-items: center;"height="35px" class="border">
+              <img src="assets/images/siemens.png" height="25px" class="border">
+              <img src="assets/images/PHOENIX CONTACT download.jpeg" height="55px" class="border">
+              <img src="assets/images/CAUTONI download.png" height="55px" class="border">
+              <img src="assets/images/BAUMER download.png" height="70px" class="border">
+              <img src="assets/images/EAPL download.jpeg " height="65px" class="border">
+              <img src="assets/images/PPI download.png" height="60px" class="border">
+              <img src="assets/images/MULTISPAN download.png" height="20px" class="border" style="margin: 0 auto;">
+              <img src="assets/images/meanwell.png" class="border">
+              <img src="assets/images/envada.png"  style="border:1px solid red;align-items: center;" class="border">
+              <img src="assets/images/senstherm.png" class="border">
+              <img src="assets/images/carlo-logo.png" class="border">
+              <img src="assets/images/autonics-logo1.png" class="border">
+              <img src="assets/images/smartec-logo.png" class="border">
+              <img src="assets/images/novus-logo.png" class="border">
+              <img src="assets/images/sipin.png" class="border">
+              <img src="assets/images/meanwell.png" class="border">
+              <img src="assets/images/envada.png" class="border">
+              <img src="assets/images/senstherm.png" class="border">
+              <img src="assets/images/carlo-logo.png" class="border">
+              <img src="assets/images/autonics-logo1.png" class="border">
+              <img src="assets/images/smartec-logo.png" class="border">
+              <img src="assets/images/novus-logo.png" class="border">
+          </span>
+      </div>
