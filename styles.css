@@ -1,10 +1,20 @@
+.float-container
+{
+  height: 100px;
+}
 
 
 .float-child {
-  width: 50%;
   float: left;
   padding: 20px;
 }  
+
+
+.float-child .float-container
+{
+  float: left;
+  width: 200px;
+}
 
 .navbar {
     background-color:#0D6094;
@@ -69,7 +79,8 @@
 
 body
 {
-    width: 100%
+    width: 100%;
+    background-color: white;
 }
 
 
@@ -465,13 +476,15 @@ body
 
 .product-list-navbar{
     overflow: hidden;
-    background-color: #333;
+    background-color: #0D6094;
     text-align: center;
-    font-size: small;
+    font-size: medium;
     font-family:Arial, Helvetica, sans-serif;
-    border: 1px solid rgb(252, 68, 68);
+    border: 2px solid white
    
 } 
+
+
 
 .product-list-navbar a {
     float: left;
@@ -486,13 +499,19 @@ body
 {
     float: left;
     overflow: hidden;
-    border-right: 0.5px solid white;
+    border-right: 1px solid white;
 }
 
+.dropbtn1
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
 .dropdown-list .dropbtn1
 {
     font-size: 12px;
     font-weight: 700;
+    text-align: center;
     border: none;
     outline: none;
     color: white;
@@ -518,7 +537,18 @@ body
     border-left: 4px solid red;
 }
 
-
+.product-card:hover
+{
+  transform: scale(1.1);
+}
+.product-information
+{
+  height: 800px;
+}
+.product-card
+{
+  height: 20px;
+}
 .product-list-dropdown-content a{
     float: none;
     color: black;
@@ -651,7 +681,10 @@ p{
     font-family:Roboto;
     font-weight:normal;
 }
-
+#header
+{
+  height: 20px;
+}
 .header-wrapper
 {
     background-color:#ffffff;
@@ -906,4 +939,27 @@ p{
     row-gap:10px;
     grid-auto-rows: minmax(100px, auto);
 }
+
+.marquee-item
+{
+  float: left;
+  width: 2%
+}
+
+.moving-text:hover{
+  animation-play-state: paused;
+} 
+
+/* The animation */
+/* @keyframes marquee{
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(-100%);}
+} */
+
+/* media query to enable animation for only those who want it */
+/* @media (prefers-reduced-motion: no-preference) {
+  .moving-text{
+      animation: marquee 25s linear infinite;
+  }
+} */
 
