@@ -496,4 +496,9 @@ body
    font-family: arial;
    font-size: medium;
 }
+
+.products-points::marker
+{
+  color: blue;
+}
       
