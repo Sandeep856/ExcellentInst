@@ -12,7 +12,7 @@
 </head>
 <body>
   
-        <header id="header">
+        <header id="header" style="height: 100px; border-bottom: 2px solid grey; box-shadow: 0 4px 12px 1px rgb(143, 142, 142);">
             <div class="float-container">
     
                 <div class="float-child" style="width: 380px;">
@@ -21,13 +21,13 @@
 
                 <div class="float-child float-container" style="width: 600px;margin-left: 40px;">
                   <div class="float-child" >
-                    <div style="color: red; text-decoration: underline; font-size: large;">Home</div>
+                    <a href="#"><div style="color: red; text-decoration: underline; font-size: large;">Home</div></a>
                   </div>
                   <div class="float-child">
-                    <div style="color:  #0D6094;; text-decoration: underline;font-size: large;">Products</div>
+                    <a href="#products"><div style="color:  #0D6094;; text-decoration: underline;font-size: large;">Products</div></a>
                   </div>
                   <div class="float-child">
-                    <div style="color:  #0D6094;; text-decoration: underline;font-size: large;">About us</div>
+                    <a href="#about-us"><div style="color:  #0D6094;; text-decoration: underline;font-size: large;">About us</div></a>
                   </div>
                   <div class="float-child">
                     <div style="color:  #0D6094;; text-decoration: underline;font-size: large;">Contact us</div>
@@ -230,9 +230,9 @@
         <hr>
         
         <br>
-            <div class="intro_about">
-                  <h2 style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif; margin-left:5%;" >About us</h2>
-                <section class="intro">
+            <div class="intro_about" id="about-us" style="padding-top: 40px;">
+                  <h2 style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif; margin-left:5%; color: maroon;" >About us</h2>
+                <section class="intro" style="height: 240px;">
                     <div style="border-left: 8px solid maroon; border-radius: 6px;"><p style="font-size: 12; font-family: Arial, Helvetica, sans-serif; padding-left: 10px; padding-right: 10%;">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex corporis iure doloribus dignissimos saepe. Nesciunt at eum nisi 
                         quae consequatur ipsa aut vitae asperiores aperiam tempore sint magnam soluta, nobis adipisci dignissimos! Accusamus neque 
@@ -259,11 +259,10 @@
                 </section>
             </div>
 
-            <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color: maroon; margin-left: 4%">Our Products</h2>
-            <br>
-            <br>
-            <div class="product-information">
-                <br>
+            <div class="product-information"  style="padding-top: 100px;" id="products">
+              <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color: maroon; margin-left: 4%">Our Products</h2>
+              <br>
+              <br>
                 <div class="product-window-home" style="width: 70%; float: left;">
                   <a href="products/temperature-controller/temperature-controllers.html" style="height: 300px; width: 300px;">
                     <div class="product" style="width: 100px; height: 100px;">
