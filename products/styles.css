@@ -62,7 +62,7 @@ body
 .product .product-card .product-img{
   z-index: 1;
   position: absolute;
-  max-width: 350px;
+ 
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -95,10 +95,10 @@ body
 
 
 .product .product-card .popup-btn{
-  z-index: 2;
+  z-index: 4;
   color: #fff;
   background: #555;
-  position: absolute;
+  position: absolute; 
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -173,6 +173,7 @@ body
   box-sizing: border-box;
   padding: 40px;
   border-radius: 10px;
+  position: relative;
 }
 
 .product .popup-card .close-btn{
@@ -325,7 +326,7 @@ body
     width: 800px;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1px;
-    row-gap: 50px;
+    row-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
 }
 .categories{
