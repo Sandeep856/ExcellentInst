@@ -2,57 +2,621 @@
 <html>
 <head>
 	<title>slider in Javascript</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="tickerBar.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="products/styles.css">
+    <script src="https://kit.fontawesome.com/feca569b47.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
-  <section class="home">
-     <div class="slider">
-        <div class="slide active" style="background-image: url('images/slide-1.jpg')">
-            <div class="container">
-                <div class="caption">
-                    <h1>1. Winter Collection 2020</h1>
-                    <p>Lorem ipsum dummy text goes here.</p>
-                    <a href="">Shop Now</a>
+        <header id="header" style="height: 100px; border-bottom: 1px solid grey; box-shadow: 0 0px 4px 0px rgb(143, 142, 142);">
+            <div class="float-container">
+    
+                <div class="float-child" style="width: 380px;">
+                  <img src="assets/images/excellent.png" width="240px" style="margin-left: 40px;">
                 </div>
-            </div>
-        </div>
-        <div class="slide" style="background-image: url('images/slide-2.jpg')">
-            <div class="container">
-                <div class="caption">
-                    <h1>2. Winter Collection 2020</h1>
-                    <p>Lorem ipsum dummy text goes here.</p>
-                    <a href="">Shop Now</a>
+
+                <div class="float-child float-container" style="width: 600px;margin-left: 40px;">
+                  <div class="float-child" >
+                    <a href="#"><div style="color: red; text-decoration: underline; font-size: large;">Home</div></a>
+                  </div>
+                  <div class="float-child">
+                    <a href="#products"><div style="color:  #0D6094;; text-decoration: underline;font-size: large;">Products</div></a>
+                  </div>
+                  <div class="float-child">
+                    <a href="#about-us"><div style="color:  #0D6094;; text-decoration: underline;font-size: large;">About us</div></a>
+                  </div>
+                  <div class="float-child">
+                   <a href="#contact-us"><div style="color:  #0D6094;; text-decoration: underline;font-size: large;">Contact us</div></a> 
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="slide" style="background-image: url('images/slide-3.jpg')">
-            <div class="container">
-                <div class="caption">
-                    <h1>3. Winter Collection 2020</h1>
-                    <p>Lorem ipsum dummy text goes here.</p>
-                    <a href="">Shop Now</a>
+                <div class="float-child" style="margin-top: 20px; float: left;">
+                  <div class="blue" style="font-size: medium;">
+                    <i class="fa fa-envelope" style="float: left;font-size: 18px;"></i>
+                    <div style="float: left; font-size: 14px; margin-left: 5px;">
+                    sales05excellent@gmail.com
+                    </div>
+                  </div>
+                  <br>
+                  <div class="blue">
+                  <i class="fa fa-phone" style="float: left;font-size: 18px;"> </i>
+                  <div style="float: left;margin-left: 5px;font-size: 14px;">
+                  8849981688 , 9998013980
+                  </div>
+                  </div>
                 </div>
-            </div>
         </div>
-     </div>
-   
-    <!-- controls  -->
-    <div class="controls">
-        <div class="prev"></div>
-        <div class="next">></div>
-    </div>
+        </header>
+       
 
-    <!-- indicators -->
-    <div class="indicator">
-    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
 
-  </section>
+        <!-- <nav class="navbar">
+            
+            <div class="navitem">
+                <div style="float: left; border-right: 0.1px solid black;"><a href="#home">Home</a></div>
+                <div style="float: left; border-right: 0.1px solid black;"><a href="#home">Products</a></div>
+                <div style="float: left; border-right: 0.1px solid black;"><a href="#home">Quality Assurance</a></div>
+                <div style="float: left; border-right: 0.1px solid black;"><a href="#home">Downloads</a></div>
+                <div style="float: left; border-right: 0.1px solid black;"><a href="#home">R and D</a></div>
+                <div style="float: left; border-right: 0.1px solid black;"><a href="#home">Events</a></div>
+                <div style="float: left; border-right: 0.1px solid black;"><a href="#home">Contact Us</a></div>
+                <div style="float: left;"><a href="#home">About Us</a></div>
+            </div>
+        </nav> -->
+    
+        
+        <nav class="product-list-navbar" style="padding-left:30%;">
+          <div class="dropdown-list" style="margin: 0 auto;">
+              <div class="dropbtn1" style="height: inherit;"><div style="margin: 0 auto; text-align: center;">INSTRUMENTS</div>
+                  <!-- <i class="fa fa-caret-down"></i> -->
+              </div>
+              <div class="product-list-dropdown-content">
+                  <a href="products/temperature-controller/temperature-controllers.html">Temperature Controllers</a>
+                  <a href="products/pid-controller/pid-controller.html">PID/Process Controllers</a>
+                  <a href="products/temperature transmitter/temperature-transmitter.html">Temperature Transmitters</a>
+                  <a href="products/signal isolator/signal-isolator.html">Signal Isolators</a>
+                  <a href="#">Temperature Indicators</a>
+                  <a href="#">RH, DP Transmitters</a>
+                  <a href="products/scanner/scanner.html">Scanners</a>
+                  <a href="products/process-indicator/process-indicator.html">Process Indicators</a>
+                  <a href="products/digital-timer/digital-timer.html">Digital Timers</a>
+                  <a href="products/flameproof-instruments/flameproof-instruments.html">Flameproof Instruments</a>
+                  <a href="#">pH Transmitter</a>
+              </div>
+           </div>
+  
+  
+           <div class="dropdown-list">
+              <button class="dropbtn1" ><b>SENSORS</b>
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="product-list-dropdown-content">
+                  <a href="products/">Temperature Sensors</a>
+                  <a href="#">Temperature Sensors ThermoCouples</a>
+                  <a href="#">ThermoWells</a>
+                  <a href="#">Level Sensors and Transmitters</a>
+                  <a href="#">Differential Pressure Sensors and Transmitters</a>
+                  <a href="#">Humidity Sensors and Transmitters</a>
+              </div>
+           </div>
+           <div class="dropdown-list">
+              <button class="dropbtn1" >GAUGES
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="product-list-dropdown-content">
+                  <a href="#">Dial Thermometers</a>
+                  <a href="#">Pressure Gauges</a>
+                  <a href="#">Pressure Transmitters</a>
+                  <a href="#">Pressure Switches </a>
+                  <a href="#">Level  Gauges</a>
+                  <a href="#">Temperature Gauge</a>
+              </div>
+           </div>
+           <div class="dropdown-list">
+              <button class="dropbtn1" >AUTOMATION
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="product-list-dropdown-content">
+                  <a href="#">Control Panels</a>
+                  <a href="#">PLC/HMI/Scada</a>
+                  <a href="#">Pneumatic Panel</a>
+              </div>
+           </div>
+          </nav>
+          
+           
+    
+           <section class="home">
+            <div class="slider">
+               <div class="slide active" style="background-image: url('assets/images/slideimage2.png')">
+                   <div class="container">
+                       <div class="caption">
+                           <h1 style="color: white; font-size: 30px;">Excellent Instruments</h1>
+                           <p style="color: cyan; font-family: Arial, Helvetica, sans-serif; font-size: medium;">We deal in range of products that include electronics instruments,automation,sensors and gauges.</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="slide" style="background-image: url('assets/images/prod.jpg'); height: 100%;">
+                   <div class="container">
+                       <div class="caption">
+                           <h1 style="color: white; font-size: 30px;">Our wide product range includes</h1>
+                           <p style="color: cyan; font-family: Arial, Helvetica, sans-serif; font-size: medium;">
+                            Temperature Controllers, PID Controllers, Temperature Transmitters, Scanners, Gauges, Sensors, Thermocouple, Flameproof Instruments, Automation</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="slide" style="background-image: url('assets/images/slideimage1.png')">
+                   <div class="container">
+                       <div class="caption">
+                        <h1 style="color: white; font-size: 20px;">Your one stop solution for all process control requirements</h1>
+                        <p style="color: cyan; font-family: Arial, Helvetica, sans-serif; font-size: medium;">
+                         Get in touch with us now</p>
+                       </div>
+                   </div>
+               </div>
+            </div>
+          
+           <!-- controls  -->
+           <div class="controls">
+               <div class="prev"><</div>
+               <div class="next">></div>
+           </div>
+       
+           <!-- indicators -->
+           <div class="indicator">
+           </div>
+       
+        </section>
+       
+        <br><br><br><br>
+        <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color: maroon; margin-left: 4%">Brands and Companies we deal in</h2>
 
+
+        <br>
+        <br>
+        <div class="brands-and-companies">
+            <div class="comp"><img style="width: 100%; height:100%" src="assets/images/autonics-logo1.png"></div>
+            <div class="comp" ><img style="width: 100%; height:100%" src="assets/images/novus-logo.png"></div>
+            <div class="comp"><div style="margin: 0 auto; margin-top: 20%;"><img style="width: 100%; height:100%" style="margin: 0 auto;" src="assets/images/honeywell.png"></div></div>
+            <div class="comp"><div style="margin-top: 20%;"><img style="width: 100%; height:100%" src="assets/images/siemens.png"></div></div>
+            <div class="comp"><div style="margin-top: 15%;"><img style="width: 100%; height:100%" src="assets/images/PHOENIX CONTACT download.jpeg"></div></div>
+            <div class="comp"><div style="margin-top: 15%;"><img style="width: 100%; height:100%" src="assets/images/CAUTONI download.png"></div></div>
+            <div class="comp"><div style="text-align: center;"><img style="width: 90%; height:90%" src="assets/images/BAUMER download.png"></div></div>
+            <div class="comp"><div style="margin-top: 5%;"><img style="width: 100%; height:100%" src="assets/images/PPI download.png"></div></div>
+            <div class="comp"><div style="height: 100%; width: 100%; text-align: center; margin-top: 5%;"><img style="width: 80%; height:80%" src="assets/images/EAPL download.jpeg"></div></div>
+            <div class="comp"><div style="text-align: center; margin-top: 20%;"><img style="width: 80%; height:80%" src="assets/images/MULTISPAN download.png"></div></div>
+            <div class="comp"><div style="height: 100%; width: 100%; text-align: center; margin-top: 5%;"><img style="width: 80%; height:80%" src="assets/images/meanwell.png"></div></div>
+            <div class="comp"><div style="text-align: center; margin-top: 10%;"><img style="width: 80%; height:80%" src="assets/images/envada.png"></div></div>
+            <div class="comp"><div style="text-align: center; margin-top: 7%;"><img style="width: 80%; height:80%" src="assets/images/senstherm.png"></div></div>
+            <div class="comp"><div style="text-align: center; margin-top: 2%;"><img style="width: 80%; height:80%" src="assets/images/smartec-logo.png"></div></div>
+            </div>
+            <div style="height: 40px;"></div>
+            <div id="more">
+              <div class="brands-and-companies">
+                <div class="comp-hidden-init"><div style="text-align: center; margin-top: 15%;"><img style="width: 80%; height:80%" src="assets/images/sipin.png"></div></div>
+              </div>
+            </div>
+            <div onclick="Readmorefunc()" id="readmore-btn" style="width: 100px; height: 20px; margin-left: 5%;">See More....</div>
+           
+        
+        
+       
+        
+        <br>
+        <br>
+        <hr>
+        
+            <div class="intro_about" id="about-us" style="padding-top: 20px; height: 300px; width: 100%;">
+                  <h2 style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif; margin-left:5%; color: maroon;" >About us</h2>
+                <section class="intro" style="height: 200px;">
+                    <div style="border-left: 8px solid maroon; border-radius: 6px;">
+                      <p style="font-size: 12; font-family: Arial, Helvetica, sans-serif; padding-left: 10px;">
+                          Excellent Instruments deals in wide variety of industry level electronics instrumentation products of renowned brands in a very competitive price range.
+                          Excellent Instruments is a well-established manufacturer of process control instruments with a strong technological foundation and a stellar reputation 
+                          for producing high-end, cutting-edge instruments for the process control sector.
+                          We have been in this business since 2014, committed to provide high quality products and end to end sound customer satisfaction to our clients. Apart from products
+                          of other companies, we have our own product range and expertise in flameproof instruments and sensors which are customisable to customer needs. We majorly deal in instruments related to 
+                          temperature controllers, PID controllers, temperature transmitters etc., sensors like temperature sensors, thermowell, gauges and automation. We provide our product support primarily to companies that function in 
+                          pharmaceutical, chemical and glass instruments fields and have been our transmitted partners for over a decade. We have witnesses consistent growth over the years threrby gaining capability to scale our order capacity and 
+                          manufacturing abilities. The above brands and companies are our major partners along with our own product range.   
+                      </p>
+                      
+                    </div>
+                    <br>
+                    <p style="font-size: 12; font-family: Arial, Helvetica, sans-serif; padding-left: 10px;">For more details you can contact us on our <b>mobile phone number</b>, <b>email address</b> our drop us your email addresss and we will reach out to you.</p>
+                    
+                    <!-- <div class="percent-one-third column-last "><iframe width="100%" height="150" src="https://www.youtube.com/embed/RcKZq8VHUCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    
+
+                </section>
+              </div>
+            <hr>
+            <br>
+            <br>
+            <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color: maroon; margin-left: 4%"  id="products">Our Products</h2>
+            <br>
+            <p style="font-size: 12;font-weight: 600; font-family: Arial, Helvetica, sans-serif; padding-left: 10px; margin-left: 3.5%;">Our product range is classified in instruments, sensors, gauges and automation. This is a non exhaustive list, to enquire about more items please contact us by our contact details</p>
+            <div class="wrapper" id="product-page">
+              <div class="tabs" id="tabs">
+                <div role="tablist" aria-label="FAQ">
+                  <button class="product-button" role="tab" aria-selected="true" id="what">Instruments</button>
+                  <button class="product-button" role="tab" aria-selected="false" id="when">Sensors</button>
+                  <button class="product-button" role="tab" aria-selected="false" id="how">Gauges</button>
+                  <button class="product-button" role="tab" aria-selected="false" id="automation">Automation</button>
+                </div>
+                <div role="tabpanel" aria-labelledby="what">
+                  <br>
+                    <div class="product-information"  style="padding-top: 20px;">
+                      <br>
+                        <div class="product-window-home" style="width: 70%; float: left;">
+                          <a href="products/temperature-controller/temperature-controllers.html" style="height: 300px; width: 300px;">
+                            <div class="product" style="width: 100px; height: 100px;">
+                                <div class="product-card">
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/temperature controllers-2.png" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Temperature Controller</h2>
+                                  
+                                </div>
+                            </div>
+                            </a>
+        
+                            <div class="product" style="float: left;">
+                              
+                              <a href="products/temperature transmitter/temperature-transmitter.html" style="height: 300px; width: 300px;">
+                              <div class="product-card">
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/temperature transmitters.png" class="product-img" alt="">
+                                
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Temperature Transmitters</h2>
+                              </div>
+                            </a>
+                            </div>
+        
+                            <div class="product" style="float: left;">
+                              <a href="products/pid-controller/pid-controller.html" style="height: 300px; width: 300px;">
+                                <div class="product-card"> 
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/pid-controller.png" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">PID/Process Controller</h2>
+                                </div>
+                              </a>
+                            </div>
+        
+                              <div class="product" style="float: left;">
+                                <a href="products/process-indicator/process-indicator.html" style="height: 300px; width: 300px;">
+                                <div class="product-card">
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/process-indicator.png" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Process Indicator</h2>
+                                </div>
+                                </a>
+                              </div>
+                
+                              <div class="product" style="float: left;">
+                                <a href="products/digital-timer/digital-timer.html" style="height: 300px; width: 300px;">
+                                <div class="product-card">
+                                  <img width="270px" style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/digital timer.png" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Digital Timer</h2>
+                                </div>
+                                </a>
+                              </div>
+        
+        
+                              <div class="product" style="float: left;">
+                                <a href="products/signal isolator/signal-isolator.html" style="height: 300px; width: 300px;">
+                                <div class="product-card">
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/signal isolator.png" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Signal Isolator</h2>
+                                </div>
+                                </a>
+                              </div>
+        
+        
+                              <div class="product" style="float: left;">
+                                <a href="products/scanner/scanner.html" style="height: 300px; width: 300px;">
+                                  <div class="product-card">
+                                    <img width="300px" style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/digital scanner.png" class="product-img" alt="">
+                                    <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Scanners</h2>
+                                  </div>
+                                </a>
+                              </div>
+        
+                              <div class="product" style="float: left;">
+                                <a href="products/flameproof-instruments/flameproof-instruments.html" style="height: 300px; width: 300px;">
+                                <div class="product-card">
+                                  <img  width="180px" style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/img9.jpeg" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Flameproof Instruments</h2>
+                                </div>
+                                </a>
+                              </div>
+                            
+                          </div>
+                    </div>
+                </div>
+                <div role="tabpanel" aria-labelledby="when" hidden id="sensors">
+                  <br>
+                    <div class="product-information"  style="padding-top: 20px;" id="products">
+                      <br>
+                        <div class="product-window-home" style="width: 70%; float: left;">
+                          <a href="products/temperature-controller/temperature-controllers.html" style="height: 300px; width: 300px;">
+                            <div class="product" style="width: 100px; height: 100px;">
+                                <div class="product-card">
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 70%; height: 65%;" src="assets/images/FLP Temperature Sensor.jpeg" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Temperture Sensors</h2>
+                                  
+                                </div>
+                            </div>
+                            </a>
+        
+                            <div class="product" style="float: left;">
+                              
+                              <a href="products/temperature transmitter/temperature-transmitter.html" style="height: 300px; width: 300px;">
+                              <div class="product-card">
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px;width: 70%;height: 65%;" src="assets/images/temperature sensors thermocouple.jpeg" class="product-img" alt="">
+                                
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Temperature Sensors Thermocouple</h2>
+                              </div>
+                            </a>
+                            </div>
+        
+                            <div class="product" style="float: left;">
+                              <a href="products/pid-controller/pid-controller.html" style="height: 300px; width: 300px;">
+                                <div class="product-card"> 
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 65%; height: 65%;" src="assets/images/thermowell.jpeg" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">ThermoWell</h2>
+                                </div>
+                              </a>
+                            </div>
+                            
+                            <div class="product" style="float: left;">
+                              <a href="products/pid-controller/pid-controller.html" style="height: 300px; width: 300px;">
+                                <div class="product-card"> 
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 65%; height: 65%;" src="assets/images/level sensors.jpeg" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Level Sensors</h2>
+                                </div>
+                              </a>
+                            </div>
+                            
+                            <div class="product" style="float: left;">
+                              <a href="products/pid-controller/pid-controller.html" style="height: 300px; width: 300px;">
+                                <div class="product-card"> 
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 65%; height: 65%;" src="assets/images/pressure sensors.jpeg" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Pressure Sensors</h2>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="product" style="float: left;">
+                              <a href="products/pid-controller/pid-controller.html" style="height: 300px; width: 300px;">
+                                <div class="product-card"> 
+                                  <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 65%; height: 65%;" src="assets/images/humidity sensors.jpg" class="product-img" alt="">
+                                  <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Humidity Sensors</h2>
+                                </div>
+                              </a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                  </div>
+                <div role="tabpanel" aria-labelledby="how" hidden>
+                  <div class="product-information"  style="padding-top: 20px;">
+                    <br>
+                      <div class="product-window-home" style="width: 70%; float: left;">
+                        <a href="#" style="height: 300px; width: 300px;">
+                          <div class="product" style="width: 100px; height: 100px;">
+                              <div class="product-card">
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/dial thermometer.jpeg" class="product-img" alt="">
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Dial Thermometer</h2>
+                                
+                              </div>
+                          </div>
+                          </a>
+      
+                          <div class="product" style="float: left;">
+                            
+                            <a href="#" style="height: 300px; width: 300px;">
+                            <div class="product-card">
+                              <img  style="border: 1px solid #a1a1a1; border-radius: 8px;width: 70%; height: 60%;" src="assets/images/pressure guage.jpeg" class="product-img" alt="">
+                              
+                              <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Pressure Gauge</h2>
+                            </div>
+                          </a>
+                          </div>
+      
+                          <div class="product" style="float: left;">
+                            <a href="#" style="height: 300px; width: 300px;">
+                              <div class="product-card"> 
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/pressure transmitter baumer.jpeg" class="product-img" alt="">
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Pressure Transmitter</h2>
+                              </div>
+                            </a>
+                          </div>
+      
+                            <div class="product" style="float: left;">
+                              <a href="#" style="height: 300px; width: 300px;">
+                              <div class="product-card">
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px;" src="assets/images/pressure switch.jpeg" class="product-img" alt="">
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Pressure Switches</h2>
+                              </div>
+                              </a>
+                            </div>
+              
+                            <div class="product" style="float: left;">
+                              <a href="#" style="height: 300px; width: 300px;">
+                              <div class="product-card">
+                                <img width="240px" height="200px" style="border: 1px solid #a1a1a1; border-radius: 8px; height: 65%;" src="assets/images/level gauge.jpeg" class="product-img" alt="">
+                                <h2 style="color: rgb(19, 19, 19); font-family: Arial, Helvetica, sans-serif;" class="name">Level Gauges</h2>
+                              </div>
+                              </a>
+                            </div>
+      
+                            <div class="product" style="float: left;">
+                              <a href="#" style="height: 300px; width: 300px;">
+                              <div class="product-card">
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px; height: 65%;" src="assets/images/temperature gauge.jpeg" class="product-img" alt="">
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Temperature Gauges</h2>
+                              </div>
+                              </a>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                
+                <div role="tabpanel" aria-labelledby="automation" hidden>
+                  <div class="product-information"  style="padding-top: 20px;">
+                    <br>
+                      <div class="product-window-home" style="width: 70%; float: left;">
+                        <a href="" style="height: 300px; width: 300px;">
+                          <div class="product" style="width: 100px; height: 100px;">
+                              <div class="product-card">
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 70%; height: 60%;" src="assets/images/control panel.jpeg" class="product-img" alt="">
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Control Panel</h2>
+                                
+                              </div>
+                          </div>
+                          </a>
+      
+                          <div class="product" style="float: left;">
+                            
+                            <a href="" style="height: 300px; width: 300px;">
+                            <div class="product-card">
+                              <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 70%; height: 60%;" src="assets/images/PLC.jpeg" class="product-img" alt="">
+                              
+                              <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">PLC/HMI/Scada</h2>
+                            </div>
+                          </a>
+                          </div>
+      
+                          <div class="product" style="float: left;">
+                            <a href="" style="height: 300px; width: 300px;">
+                              <div class="product-card"> 
+                                <img  style="border: 1px solid #a1a1a1; border-radius: 8px; width: 70%; height: 60%;" src="assets/images/pneumatic panel.jpeg" class="product-img" alt="">
+                                <h2 style="color: black; font-family: Arial, Helvetica, sans-serif;" class="name">Pneumatic Panel</h2>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer" id="contact-us">
+              <div style="display: block;height: 40px; margin-left: 40px; margin-top: 120px;" >
+                <img width="300px"src="assets/images/excellent.png">
+              </div>
+              
+              <div class="col-1">
+                <h3>USEFUL LINKS</h3>
+                <br>
+                <div>
+                <a href="#">Home</a>
+                <a href="#about-us">About us</a>
+                <a href="#product-page">Products</a>
+                <a href="#">Downloads</a>
+              </div>
+              </div>
+              <div class="col-2">
+                <h3>Get in Touch with us</h3>
+                <br>
+                <form>
+                  <input type="email" placeholder="Send us your email" required>
+                  <br>
+                  <button type="submit">
+                      ENQUIRE NOW
+                  </button>
+                </form>
+              </div>
+              <div class="col-3">
+                
+                <div style="text-align: left; margin-left: 50px; color: cyan;">Contact Us by</div>
+                <div class="float-child" style="margin-top: 20px; float: left;">
+                  <div class="blue" style="font-size: medium;"> 
+                    <div style="float: left; font-size: 14px; margin-left: 5px; width: 330px;">
+                      199, SHREYAS BRIGHT BARS, GIDC ESTATE, MAKARPURA, Vadodara, gujarat, 390010
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="blue" style="font-size: medium;">
+                    <div style="float: left; font-size: 14px; margin-left: 35px;">
+                    sales05excellent@gmail.com
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="blue">
+                  <div style="float: left;margin-left: 35px;font-size: 14px;">
+                  8849981688 , 9998013980
+                  </div>
+                  </div>
+                </div>
+                <div>
+
+                </div>
+              </div>
+            </div>
+            <div style="background-color: #0D6094;">
+            <div style="margin-left: 35%; height: 40px; ">
+              Copyright &#169; Excellent Instruments since 2014
+            </div>
+          </div>
+            
+            
  
  <script src="script.js"></script>
+ <script>
+      function Readmorefunc() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("readmore-btn");
 
+      if (btnText.innerHTML === "See Less") {
+        btnText.innerHTML = "See More";
+        moreText.style.display = "none";
+      } else {
+        btnText.innerHTML = "See Less";
+        moreText.style.display = "inline";
+      }
+      }
+
+
+
+const tabs = document.querySelector('.tabs');
+const tabButtons = tabs.querySelectorAll('[role="tab"]');
+const tabPanels = Array.from(tabs.querySelectorAll('[role="tabpanel"]'));
+
+function handleTabClick(event) {
+  // hide all tab panels
+  tabPanels.forEach(panel => {
+    panel.hidden = true;
+  });
+
+  // mark all tab buttons as unselected
+  tabButtons.forEach(tab => {
+    tab.setAttribute('aria-selected', false);
+  });
+
+  // mark the clicked tab as selected
+  event.currentTarget.setAttribute('aria-selected', true);
+
+  // find the associated tab panel and show it - associated by "aria-labelledby"
+  const { id } = event.currentTarget;
+
+  const tabPanel = tabPanels.find(
+    panel => panel.getAttribute('aria-labelledby') === id
+  );
+  tabPanel.hidden = false;
+}
+
+tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
+ </script>
 </body>
 </html>
 
