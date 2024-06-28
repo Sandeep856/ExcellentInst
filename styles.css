@@ -736,7 +736,7 @@ p{
 
 #footer .footer-bottom
 {
-    background-color:#060606;
+    background-color:#257583;
 }
 
 #footer .footer-bottom, #footer .footer-bottom p, #footer .footer-bottom .widget > div > ul li, #footer .footer-bottom .widget > ul li
@@ -1168,7 +1168,7 @@ p{
 {
   width: 100%;
   height: 350px;
-  background: rgb(23, 23, 23);
+  background: rgb(15, 85, 94);
   color: #efefef;
   display: flex;
   padding-right: 100px;
